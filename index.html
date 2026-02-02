@@ -3,264 +3,529 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="styles.css">
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <title>Sushovan Masanta - Creative Developer & Designer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <title>Portfolio website Sushovan</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!--===== HEADER =====-->
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <div>
-        <a href="#" class="nav__logo">susHOvan</a>
+  <!-- Cursor Follower -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        susHOvan
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-nav-link>About</a>
+        <a href="#skills" class="nav-link" data-nav-link>Skills</a>
+        <a href="#projects" class="nav-link" data-nav-link>Projects</a>
+        <a href="#gallery" class="nav-link" data-nav-link>Gallery</a>
+        <a href="#contact" class="nav-link" data-nav-link>Contact</a>
       </div>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#projects" class="nav__link">Project</a></li>
-          <li class="nav__item"><a href="#ClickByMe" class="nav__link">CliCk BY ME</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
-      </div>
-    </nav>
-  </header>
-
-  <main class="l-main">
-    <!--===== HOME =====-->
-    <section class="home bd-grid" id="home">
-      <div class="home__data">
-        <h1 class="home__title">
-          Hi,<br>
-          I'am <span class="home__title-color">Sushovan</span><br>
-          Web Designer
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-label" data-animate>
+          <span class="label-dot"></span>
+          Available for freelance
+        </div>
+        
+        <h1 class="hero-title" data-animate>
+          <span class="title-line">Creative</span>
+          <span class="title-line">Developer &</span>
+          <span class="title-line highlight">Designer</span>
         </h1>
-
-        <a href="https://drive.google.com/uc?export=download&id=160Fpx74Ke8O6R_JhkwJPD1E5zq6DMViF" 
-           class="button" target="_blank">Download CV</a>
-
-        <div class="home__social">
-          <a href="https://www.linkedin.com/in/sushovan-masanta-a71227256" 
-             class="home__social-icon" target="_blank" rel="noopener noreferrer">
-            <i class='bx bxl-linkedin'></i>
+        
+        <p class="hero-description" data-animate>
+          I craft beautiful digital experiences that blend aesthetics with functionality.
+          Specialized in web development, UI/UX design, and mobile photography.
+        </p>
+        
+        <div class="hero-cta" data-animate>
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
           </a>
-          <a href="https://github.com/sushovancpp" 
-             class="home__social-icon" target="_blank" rel="noopener noreferrer">
-            <i class='bx bxl-github'></i>
+          <a href="#contact" class="btn btn-outline">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+
+        <div class="hero-social" data-animate>
+          <a href="https://www.linkedin.com/in/sushovan-masanta-a71227256" class="social-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/sushovancpp" class="social-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/sushovan.cpp" class="social-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:masantasushovan@gmail.com" class="social-link" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-envelope"></i>
           </a>
         </div>
       </div>
-
-      <div class="home__img">
-        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <mask id="mask0" mask-type="alpha">
-            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-          </mask>
-          <g mask="url(#mask0)">
-            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-            <image class="home__blob-img" x="50" y="60" href="img/MYIMG.png"/>
-          </g>
-        </svg>
-      </div>
-    </section>
-
-    <!--===== ABOUT =====-->
-    <section class="about section" id="about">
-      <h2 class="section-title">About</h2>
-      <div class="about__container bd-grid">
-        <div class="about__img">
-          <img src="img/about.png" alt="">
+      
+      <div class="hero-visual" data-animate>
+        <div class="visual-card">
+          <div class="card-shine"></div>
+          <img src="img/about.png" alt="Sushovan Masanta" class="hero-image">
+          <div class="card-gradient"></div>
         </div>
-        <div>
-          <h2 class="about__subtitle">I'am Sushovan</h2>
-          <p class="about__text">
-            an engineering student and passionate web developer who loves blending code with creativity. 
-            I enjoy crafting modern, user-friendly digital experiences that bring ideas to life. 
-            When I’m not coding, you’ll often find me exploring the world through mobile photography, capturing moments from a unique perspective. 
-            I’m constantly learning, experimenting, and pushing my limits to stay in sync with the ever-evolving world of technology.
-          </p>           
-        </div>                                   
-      </div>
-    </section>
-
-    <!--===== EDUCATION =====-->
-    <section class="education section" id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="education__container bd-grid">
-        <div class="education__content">
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
-          </div>
-          <div class="education__data bd-grid">
-            <h3 class="education__year">2022 - 2026</h3>
-            <h4 class="education__degree">Bachelor of Technology in Computer Science (AIML)</h4>
-            <span class="education__institution">Brainware University, Kolkata</span>
-          </div>
+        <div class="floating-badge badge-1">
+          <i class="fas fa-code"></i>
+          <span>Full Stack</span>
         </div>
-
-        <div class="education__content">
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
-          </div>
-          <div class="education__data bd-grid">
-            <h3 class="education__year">2020 - 2022</h3>
-            <h4 class="education__degree">Higher Secondary Education</h4>
-            <span class="education__institution">Simlapal MM High School, Simlapal</span>
-          </div>
+        <div class="floating-badge badge-2">
+          <i class="fas fa-palette"></i>
+          <span>UI/UX</span>
+        </div>
+        <div class="floating-badge badge-3">
+          <i class="fas fa-camera"></i>
+          <span>Photography</span>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!--===== SKILLS =====-->
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="skills-grid">
-          <!-- Frontend -->
-          <div class="skill-category">
-            <h3>Frontend</h3>
-            <div class="skill-items">
-              <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
-              <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-              <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
-              <div class="skill-item"><i class="fab fa-react"></i><span>React</span></div>
-            </div>
-          </div>
-          <!-- Backend -->
-          <div class="skill-category">
-            <h3>Backend</h3>
-            <div class="skill-items">
-              <div class="skill-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
-              <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
-              <div class="skill-item"><i class="fas fa-database"></i><span>SQLite</span></div>
-              <div class="skill-item"><i class="fas fa-server"></i><span>Express.js</span></div>
-            </div>
-          </div>
-          <!-- Tools -->
-          <div class="skill-category">
-            <h3>Tools</h3>
-            <div class="skill-items">
-              <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
-              <div class="skill-item"><i class="fab fa-aws"></i><span>AWS</span></div>
-              <div class="skill-item"><i class="fas fa-cloud"></i><span>Cloud</span></div>
-            </div>
-          </div>
-          <!-- Academic -->
-          <div class="skill-category">
-            <h3>Academic</h3>
-            <div class="skill-items">
-              <div class="skill-item"><i class="fab fa-html5"></i><span>DSA</span></div>
-              <div class="skill-item"><i class="fab fa-css3-alt"></i><span>OS</span></div>
-              <div class="skill-item"><i class="fab fa-js"></i><span>DBMS</span></div>
-              <div class="skill-item"><i class="fab fa-react"></i><span>Network</span></div>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" data-animate>
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header" data-scroll-reveal>
+        <span class="section-label">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image" data-scroll-reveal>
+          <div class="image-wrapper">
+            <img src="img/about.png" alt="Sushovan" class="about-img">
+            <div class="image-overlay">
+              <div class="overlay-stats">
+                <div class="stat">
+                  <h3>2+</h3>
+                  <p>Years Learning</p>
+                </div>
+                <div class="stat">
+                  <h3>15+</h3>
+                  <p>Projects</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!--===== PROJECTS =====-->
-    <section id="projects" class="projects">
-      <div class="container">
+        <div class="about-content" data-scroll-reveal>
+          <h3 class="about-subtitle">Engineering Student & Web Developer</h3>
+          <p class="about-text">
+            Hello! I'm <strong>Sushovan Masanta</strong>, an engineering student and passionate web developer 
+            who loves blending code with creativity. I enjoy crafting modern, user-friendly digital 
+            experiences that bring ideas to life.
+          </p>
+          <p class="about-text">
+            When I'm not coding, you'll often find me exploring the world through mobile photography, 
+            capturing moments from a unique perspective. I'm constantly learning, experimenting, and 
+            pushing my limits to stay in sync with the ever-evolving world of technology.
+          </p>
+
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h4>Education</h4>
+                <p>BTech in CS (AIML) - Brainware University</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Kolkata, West Bengal, India</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://drive.google.com/uc?export=download&id=160Fpx74Ke8O6R_JhkwJPD1E5zq6DMViF" 
+             class="btn btn-primary" target="_blank">
+            <i class="fas fa-download"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header" data-scroll-reveal>
+        <span class="section-label">What I do</span>
+        <h2 class="section-title">Skills & Expertise</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-card" data-scroll-reveal>
+          <div class="skill-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>Creating responsive and interactive user interfaces with modern frameworks</p>
+          <div class="skill-tags">
+            <span><i class="fab fa-html5"></i> HTML5</span>
+            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+            <span><i class="fab fa-react"></i> React</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card" data-scroll-reveal>
+          <div class="skill-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend Development</h3>
+          <p>Building robust server-side applications and RESTful APIs</p>
+          <div class="skill-tags">
+            <span><i class="fab fa-node-js"></i> Node.js</span>
+            <span><i class="fab fa-python"></i> Python</span>
+            <span><i class="fas fa-database"></i> SQLite</span>
+            <span><i class="fas fa-code"></i> Express.js</span>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="skill-card" data-scroll-reveal>
+          <div class="skill-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Tools & Technologies</h3>
+          <p>Working with modern development tools and cloud platforms</p>
+          <div class="skill-tags">
+            <span><i class="fab fa-git-alt"></i> Git</span>
+            <span><i class="fab fa-aws"></i> AWS</span>
+            <span><i class="fas fa-cloud"></i> Cloud</span>
+            <span><i class="fab fa-docker"></i> DevOps</span>
+          </div>
+        </div>
+
+        <!-- Academic -->
+        <div class="skill-card" data-scroll-reveal>
+          <div class="skill-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Computer Science</h3>
+          <p>Strong foundation in core computer science concepts</p>
+          <div class="skill-tags">
+            <span><i class="fas fa-project-diagram"></i> DSA</span>
+            <span><i class="fas fa-laptop-code"></i> OS</span>
+            <span><i class="fas fa-database"></i> DBMS</span>
+            <span><i class="fas fa-network-wired"></i> Networks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-scroll-reveal>
+        <span class="section-label">My work</span>
         <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder"><i class="fas fa-laptop-code"></i></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card featured" data-scroll-reveal>
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fas fa-laptop-code"></i>
             </div>
-            <div class="project-content">
-              <h3>PrepMate</h3>
-              <p>A AI based interview mocker with React frontend and Node.js backend.</p>
-              <div class="project-tech">
-                <span>React</span><span>Node.js</span><span>Gemini Api</span>
+            <div class="project-badge">Featured</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-category">Web Application</span>
+              <span class="project-date">2024</span>
+            </div>
+            <h3>PrepMate</h3>
+            <p>AI-powered interview preparation platform with intelligent mock interviews, real-time feedback, and personalized learning paths. Built with React and Node.js, integrated with Gemini API for natural language processing.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Gemini API</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://prep-mate-seven.vercel.app/" class="project-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="https://github.com/sushovancpp" class="project-link" target="_blank">
+                <i class="fab fa-github"></i>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-scroll-reveal>
+          <div class="project-image">
+            <div class="project-overlay">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-category">Machine Learning</span>
+              <span class="project-date">2024</span>
+            </div>
+            <h3>SpamGuard</h3>
+            <p>Intelligent SMS spam detection system using machine learning classification models. Leverages Python and Streamlit for an intuitive user interface with real-time spam detection.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>Scikit-learn</span>
+              <span>NLP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sushovan-sms-spam-app.streamlit.app/" class="project-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+              </a>
+              <a href="https://github.com/sushovancpp/sms-spam-app" class="project-link" target="_blank">
+                <i class="fab fa-github"></i>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header" data-scroll-reveal>
+        <span class="section-label">Through my lens</span>
+        <h2 class="section-title">Photography Gallery</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <a href="https://www.instagram.com/sushovan.cpp" class="gallery-item" data-scroll-reveal target="_blank">
+          <img src="img/photo1.jpg" alt="Photography by Sushovan">
+          <div class="gallery-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/sushovan.cpp" class="gallery-item" data-scroll-reveal target="_blank">
+          <img src="img/photo2.jpg" alt="Photography by Sushovan">
+          <div class="gallery-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/sushovan.cpp" class="gallery-item" data-scroll-reveal target="_blank">
+          <img src="img/photo3.jpg" alt="Photography by Sushovan">
+          <div class="gallery-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/sushovan.cpp" class="gallery-item" data-scroll-reveal target="_blank">
+          <img src="img/photo4.jpg" alt="Photography by Sushovan">
+          <div class="gallery-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/sushovan.cpp" class="gallery-item" data-scroll-reveal target="_blank">
+          <img src="img/photo5.jpg" alt="Photography by Sushovan">
+          <div class="gallery-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/sushovan.cpp" class="gallery-item" data-scroll-reveal target="_blank">
+          <img src="img/photo6.jpg" alt="Photography by Sushovan">
+          <div class="gallery-overlay">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery-cta" data-scroll-reveal>
+        <a href="https://www.instagram.com/sushovan.cpp" class="btn btn-outline" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <span>View More on Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-scroll-reveal>
+        <span class="section-label">Let's connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-scroll-reveal>
+          <h3>Let's work together</h3>
+          <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+          
+          <div class="contact-details">
+            <a href="mailto:masantasushovan@gmail.com" class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
               </div>
-              <div class="project-links">
-                <a href="https://prep-mate-seven.vercel.app/" class="btn btn-small">Live Demo</a>
-                <a href="https://github.com/sushovancpp" class="btn btn-small btn-outline">GitHub</a>
+              <div>
+                <h4>Email</h4>
+                <p>masantasushovan@gmail.com</p>
+              </div>
+            </a>
+            
+            <a href="tel:+917908869499" class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 7908869499</p>
+              </div>
+            </a>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Kolkata, West Bengal, India</p>
               </div>
             </div>
           </div>
-          <!-- Project 2 -->
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder"><i class="fas fa-mobile-alt"></i></div>
-            </div>
-            <div class="project-content">
-              <h3>SpamGuard</h3>
-              <p> SpamGuard detect spam SMS using python based machine learning classification models</p>
-              <div class="project-tech">
-                <span>python</span><span>streamlit</span>
-              </div>
-              <div class="project-links">
-                <a href="https://sushovan-sms-spam-app.streamlit.app/" class="btn btn-small">Live Demo</a>
-                <a href="https://github.com/sushovancpp/sms-spam-app" class="btn btn-small btn-outline">GitHub</a>
-              </div>
-            </div>
+
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/sushovan-masanta-a71227256" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/sushovancpp" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/sushovan.cpp" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!--===== CLICK BY ME =====-->
-    <section id="ClickByMe" class="ClickByMe">
-      <h2 class="section-title">CliCk BY ME</h2>
-      <div class="work__container bd-grid">
-        <a href="https://www.instagram.com/sushovan.cpp" class="work__img"><img src="img/photo1.jpg" alt=""></a>
-        <a href="https://www.instagram.com/sushovan.cpp" class="work__img"><img src="img/photo2.jpg" alt=""></a>
-        <a href="https://www.instagram.com/sushovan.cpp" class="work__img"><img src="img/photo3.jpg" alt=""></a>
-        <a href="https://www.instagram.com/sushovan.cpp" class="work__img"><img src="img/photo4.jpg" alt=""></a>
-        <a href="https://www.instagram.com/sushovan.cpp" class="work__img"><img src="img/photo5.jpg" alt=""></a>
-        <a href="https://www.instagram.com/sushovan.cpp" class="work__img"><img src="img/photo6.jpg" alt=""></a>
-      </div>
-    </section>
-
-    <!--===== CONTACT =====-->
-    <section class="contact section" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-          <input type="text" placeholder="Name" class="contact__input">
-          <input type="mail" placeholder="Email" class="contact__input">
-          <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-          <input type="button" value="SEND" class="contact__button button">
+        <form class="contact-form" id="contactForm" data-scroll-reveal>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
         </form>
       </div>
-    </section>
-  </main>
-
-  <!--===== FOOTER =====-->
-  <footer class="footer">
-    <p class="footer__title">susHOvan</p>
-    <div class="footer__social">
-      <a href="mail to:masantasushovan@gmail.com" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-      <a href="https://www.linkedin.com/in/sushovan-masanta-a71227256" class="footer__icon"><i class='bx bx-envelope'></i></a>
-      <a href="tel:+917908869499" class="footer__icon"><i class='bx bx-phone'></i></a>
     </div>
-    <p class="footer__copy">&#169;susHOvan. All rights reserved</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <span class="logo-bracket">&lt;</span>
+            susHOvan
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Crafting beautiful digital experiences</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Social</h4>
+            <a href="https://www.linkedin.com/in/sushovan-masanta-a71227256" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sushovancpp" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/sushovan.cpp" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sushovan Masanta. All rights reserved.</p>
+        <p>Designed & Developed with <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
   </footer>
 
-  <!--===== SCROLL REVEAL =====-->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-  <!--===== MAIN JS =====-->
+  <!-- Scripts -->
   <script src="main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
