@@ -929,7 +929,7 @@ body {
 
 .gallery-item {
   position: relative;
-  aspect-ratio: 1;
+  aspect-ratio: 3/4;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
