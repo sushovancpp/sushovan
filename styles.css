@@ -913,6 +913,10 @@ body {
   gap: 0.75rem;
   color: var(--color-primary-dark);
 }
+.project-cta {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+}
 
 /* ===== GALLERY SECTION ===== */
 .gallery {
